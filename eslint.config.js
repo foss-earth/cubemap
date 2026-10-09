@@ -1,0 +1,2 @@
+import tseslint from "typescript-eslint";
+export default tseslint.config({ ignores: ["build/**", "dist/**", "node_modules/**"] }, ...tseslint.configs.recommended, { rules: { "@typescript-eslint/no-empty-function": "off", "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_", varsIgnorePattern: "^_" }] } }, { files: ["scripts/**/*.mjs", "fixtures/**/*.mjs"], languageOptions: { globals: { process: "readonly", console: "readonly", Buffer: "readonly" } } });

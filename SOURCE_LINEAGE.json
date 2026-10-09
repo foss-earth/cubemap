@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "sourceRevision": "90e23b3ee96f53ec5900afc5991a21fffa58649d",
+  "cleanSourceRevision": "ab46270ad3da085eb88b43346c50133a24cce688",
+  "importedHead": "dd4876957552f82242f395075267e27508a2ffe3",
+  "paths": [
+    "LICENSE",
+    "NOTICE",
+    "scripts/lib/panoramaImage.mjs",
+    "src/engine/babylon/panorama/panoramaShaders.ts",
+    "src/engine/babylon/panorama/panoramaShadersWebGL.ts",
+    "src/engine/babylon/panorama/panoramaTextures.ts",
+    "src/scenes/budget.test.ts",
+    "src/scenes/budget.ts",
+    "src/scenes/format.ts",
+    "src/scenes/foss-earth-scene-1.schema.json",
+    "src/scenes/panoramaMath.test.ts",
+    "src/scenes/panoramaMath.ts",
+    "src/scenes/panoramaResources.test.ts",
+    "src/scenes/panoramaResources.ts",
+    "src/scenes/validateScene.test.ts",
+    "src/scenes/validateScene.ts"
+  ],
+  "commits": [
+    {
+      "originalCommit": "47b90a5d3772e9af980c582fb1a3742d602d9342",
+      "cleanCommit": "47b90a5d3772e9af980c582fb1a3742d602d9342",
+      "mark": ":3",
+      "importedCommit": "c65c5c7e19d4e5c0b071f8510c1466e19804e03f",
+      "authorCommitterHeadersPreserved": true
+    },
+    {
+      "originalCommit": "a1bdd9a00c3002a358ea001dbe06820bb20edfc1",
+      "cleanCommit": "a1bdd9a00c3002a358ea001dbe06820bb20edfc1",
+      "mark": ":12",
+      "importedCommit": "ec2f98030dc7f4f098dedda736af99650e118113",
+      "authorCommitterHeadersPreserved": true
+    },
+    {
+      "originalCommit": "348f5aa60df2f246b2a20d692a3880638eeb999f",
+      "cleanCommit": "348f5aa60df2f246b2a20d692a3880638eeb999f",
+      "mark": ":18",
+      "importedCommit": "3cfed6e39ad27484106166f1488244fb3a9cfa7e",
+      "authorCommitterHeadersPreserved": true
+    },
+    {
+      "originalCommit": "ec935820914dfccb959d205b52afffc6908c3581",
+      "cleanCommit": "ec935820914dfccb959d205b52afffc6908c3581",
+      "mark": ":24",
+      "importedCommit": "04cc1b9a469c366c60f62a6a68576d79e3da8350",
+      "authorCommitterHeadersPreserved": true
+    },
+    {
+      "originalCommit": "815c4cbe3a935568d06c56921a3cd5c885cb622b",
+      "cleanCommit": "815c4cbe3a935568d06c56921a3cd5c885cb622b",
+      "mark": ":33",
+      "importedCommit": "324211c2f9ddeaad682e88e864e5e234c0023c67",
+      "authorCommitterHeadersPreserved": true
+    },
+    {
+      "originalCommit": "de2633623be7967a6557272687df4351742a808c",
+      "cleanCommit": "de2633623be7967a6557272687df4351742a808c",
+      "mark": ":35",
+      "importedCommit": "4803d79553408ea527cf2ef67a0d9bf9d6488a8c",
+      "authorCommitterHeadersPreserved": true
+    },
+    {
+      "originalCommit": "3aa5b09977da43b09eeb527fbc870fd29cce61ae",
+      "cleanCommit": "3aa5b09977da43b09eeb527fbc870fd29cce61ae",
+      "mark": ":40",
+      "importedCommit": "deee3ce14b23f130be6d8d4f6f0fe0305e4d3671",
+      "authorCommitterHeadersPreserved": true
+    },
+    {
+      "originalCommit": "2eac80cf0614e609610b43409d68c125a92e9c72",
+      "cleanCommit": "2eac80cf0614e609610b43409d68c125a92e9c72",
+      "mark": ":42",
+      "importedCommit": "cce3ee11a3fb3800d9b1193db0267c758e498c18",
+      "authorCommitterHeadersPreserved": true
+    },
+    {
+      "originalCommit": "eb5cbfc976b11a5b46123f6c76d4a09de407c8ab",
+      "cleanCommit": "eb5cbfc976b11a5b46123f6c76d4a09de407c8ab",
+      "mark": ":53",
+      "importedCommit": "6ea01dc4b573206c882a1e392ac295ff91d2e182",
+      "authorCommitterHeadersPreserved": true
+    },
+    {
+      "originalCommit": "2418799c33408eb2c59a31aa315fe8178eee09cc",
+      "cleanCommit": "2418799c33408eb2c59a31aa315fe8178eee09cc",
+      "mark": ":58",
+      "importedCommit": "5f2076b245ec2ad2509577c3bcfb9634eef273d3",
+      "authorCommitterHeadersPreserved": true
+    },
+    {
+      "originalCommit": "d448d84e215691f7822471072e03cd046e75126e",
+      "cleanCommit": "d448d84e215691f7822471072e03cd046e75126e",
+      "mark": ":65",
+      "importedCommit": "dc32b5471bedb1fce53488e9d7033399bbffc532",
+      "authorCommitterHeadersPreserved": true
+    },
+    {
+      "originalCommit": "1a1ecf10bd18dcd9fa858329883231cf6c629161",
+      "cleanCommit": "1a1ecf10bd18dcd9fa858329883231cf6c629161",
+      "mark": ":68",
+      "importedCommit": "76e07f5e1ebe11ce2ded9a8bb1ab3e0b362f6b9b",
+      "authorCommitterHeadersPreserved": true
+    },
+    {
+      "originalCommit": "2accf888776dc714310bca94af469397ab6bc53d",
+      "cleanCommit": "2accf888776dc714310bca94af469397ab6bc53d",
+      "mark": ":73",
+      "importedCommit": "571bead30df55eed4557242a4f16c019a12924f2",
+      "authorCommitterHeadersPreserved": true
+    },
+    {
+      "originalCommit": "2b626064207978804483a293130fd52adcbf3580",
+      "cleanCommit": "2bb3c9fa50ff27f774bd1e7f548d85d8521a3af7",
+      "mark": ":75",
+      "importedCommit": "dd4876957552f82242f395075267e27508a2ffe3",
+      "authorCommitterHeadersPreserved": true
+    }
+  ],
+  "humanHeadersVerified": true,
+  "publicationAdmission": "pending installed common full-ref audit and remote enforcement"
+}

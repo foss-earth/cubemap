@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/foss-earth/cubemap/schema/representation.json",
+  "title": "cube representation, scene version 1",
+  "required": [
+    "id",
+    "role",
+    "projection",
+    "mimeType",
+    "encodedBytes",
+    "faceSize",
+    "faces"
+  ],
+  "properties": {
+    "id": {
+      "$ref": "#/$defs/id"
+    },
+    "role": {
+      "enum": [
+        "preview",
+        "immersion"
+      ]
+    },
+    "projection": {
+      "const": "cube"
+    },
+    "mimeType": {
+      "enum": [
+        "image/jpeg",
+        "image/png"
+      ]
+    },
+    "encodedBytes": {
+      "$ref": "#/$defs/positiveInteger",
+      "description": "The prepared files' total bytes, six faces summed for a cube, every tile for a tiled cube."
+    },
+    "extensions": {
+      "$ref": "#/$defs/extensions"
+    },
+    "faceSize": {
+      "$ref": "#/$defs/positiveInteger"
+    },
+    "faces": {
+      "type": "object",
+      "description": "Faces named by the format's source axes: X east, Y north, Z up at zero pose. See the cube face table in docs/public-contracts.md.",
+      "required": [
+        "px",
+        "nx",
+        "py",
+        "ny",
+        "pz",
+        "nz"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "px": {
+          "$ref": "#/$defs/url"
+        },
+        "nx": {
+          "$ref": "#/$defs/url"
+        },
+        "py": {
+          "$ref": "#/$defs/url"
+        },
+        "ny": {
+          "$ref": "#/$defs/url"
+        },
+        "pz": {
+          "$ref": "#/$defs/url"
+        },
+        "nz": {
+          "$ref": "#/$defs/url"
+        }
+      }
+    }
+  },
+  "additionalProperties": false,
+  "type": "object",
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9._-]+$",
+      "description": "Case-sensitive ASCII, unique in its scope."
+    },
+    "positiveInteger": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "extensions": {
+      "type": "object",
+      "description": "Namespaced data for later features. Never executed.",
+      "propertyNames": {
+        "$ref": "#/$defs/extensionKey"
+      },
+      "additionalProperties": {
+        "type": "object"
+      }
+    },
+    "extensionKey": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+(\\.[A-Za-z0-9_-]+)+$",
+      "description": "An owner, then a name: \"owner.name\"."
+    },
+    "url": {
+      "type": "string",
+      "minLength": 1,
+      "description": "http(s), absolute or relative to the manifest's final response URL; no credentials."
+    }
+  }
+}
