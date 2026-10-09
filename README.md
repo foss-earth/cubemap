@@ -28,7 +28,6 @@ source-only work removed no current-app implementation and changed no applicatio
 imports. Loader callers must provide a dedicated operation scope and explicitly
 acknowledge a completed visibility swap with `settleReplacement()`.
 
-YOU CANNOT HAVE AI AS A CO-AUTHOR, OR YOUR CONTRIBUTIONS WILL BE REJECTED.
 
 ## Native input lifetime source increment
 

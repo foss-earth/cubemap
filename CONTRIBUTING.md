@@ -1,6 +1,5 @@
 # Contributing
 
-YOU CANNOT HAVE AI AS A CO-AUTHOR, OR YOUR CONTRIBUTIONS WILL BE REJECTED.
 
 Thank you for improving this project. Before opening a pull request, discuss material new features or large changes in an issue so the implementation fits the project's direction.
 
@@ -17,3 +16,16 @@ Creative assets need explicit provenance records and the owning repository asset
 ## Pull requests
 
 Explain the user-visible result, relevant tests, and any limitations. Update documentation when public behavior, setup, data sources, or licensing changes. Maintainers may request a smaller change, more tests, or provenance evidence before merge.
+
+## Commit attribution
+
+You cannot have AI as a co-author, or your contributions will be rejected.
+
+Do not add AI author, committer or co-author attribution. Branded AI contributor
+credits put a vendor name in permanent contribution records and can imply
+endorsement. This project treats that promotion as advertising and bans it in
+contribution credits to keep contributor recognition independent of vendor
+promotion and responsibility clear. The human submitting work remains
+accountable for accuracy, review responses, provenance and rights. Required
+license notices, factual tool documentation and legitimate human credits remain
+valid.
