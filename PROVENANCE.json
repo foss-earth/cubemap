@@ -264,14 +264,14 @@
     },
     {
       "path": "CONTRIBUTING.md",
-      "sha256": "2809e5e1a88cbe2ad01f4cadb23004f5b10ee62a7866c431f67ace7a2d76ba85",
-      "bytes": 285,
+      "sha256": "3d6dda5606c6038f1ac03edcf7c36f80aa757c30cf7eceb6090ec1046dc6d02c",
+      "bytes": 1443,
       "status": "authored extraction/adapter/fixture/docs source; UNRUN"
     },
     {
       "path": "README.md",
-      "sha256": "76a306779f10fbe097009f8a9796e94edb5ef9383a8e819daa21dd2e43ec565e",
-      "bytes": 2234,
+      "sha256": "7c66d9120b072f2591739ee88f6269d2f12b3e6e627876fa66c67522e34d5e35",
+      "bytes": 2386,
       "status": "authored extraction/adapter/fixture/docs source; UNRUN"
     },
     {
@@ -306,8 +306,8 @@
     },
     {
       "path": "fixtures/installed-consumer.mjs",
-      "sha256": "ef09bea72e63d7586b1bb7fe742d53308285457bfc644a3231a24940025aee3d",
-      "bytes": 6607,
+      "sha256": "d19a0b5fe91c1c3fe9273f22e1191438173064834620475b92df8efe93175424",
+      "bytes": 6602,
       "status": "authored extraction/adapter/fixture/docs source; UNRUN"
     },
     {
@@ -324,8 +324,8 @@
     },
     {
       "path": "scripts/check-installed-artifact.mjs",
-      "sha256": "e83e357ca01090acf469656969234ad2fef6355165a8bce138e54bbee1a4f38d",
-      "bytes": 7679,
+      "sha256": "89f7f40d346ece8190cf3ff5f9362cc2767d87d1e934a6588c51ef11462770be",
+      "bytes": 7680,
       "status": "authored extraction/adapter/fixture/docs source; UNRUN"
     },
     {
@@ -411,7 +411,7 @@
     "actualConsumerAdoption": null
   },
   "primarySourceSnapshot": {
-    "createdAtUtc": "2026-10-09T19-10-46Z",
+    "createdAtUtc": "2026-10-09T19-18-31Z",
     "status": "source-only; no qualification or artifact seal",
     "authoredFiles": [
       {
@@ -439,15 +439,27 @@
         "status": "authored source/scaffold/adapter/fixture; UNRUN"
       },
       {
+        "path": "CODE_OF_CONDUCT.md",
+        "sha256": "c3a907b9e659a0f5a4c701be1b34a7d416526c3a99f129bf4d3b9db09c7ffa9d",
+        "bytes": 3442,
+        "status": "authored source/scaffold/adapter/fixture; UNRUN"
+      },
+      {
         "path": "CONTRIBUTING.md",
-        "sha256": "2809e5e1a88cbe2ad01f4cadb23004f5b10ee62a7866c431f67ace7a2d76ba85",
-        "bytes": 285,
+        "sha256": "3d6dda5606c6038f1ac03edcf7c36f80aa757c30cf7eceb6090ec1046dc6d02c",
+        "bytes": 1443,
         "status": "authored source/scaffold/adapter/fixture; UNRUN"
       },
       {
         "path": "README.md",
-        "sha256": "76a306779f10fbe097009f8a9796e94edb5ef9383a8e819daa21dd2e43ec565e",
-        "bytes": 2234,
+        "sha256": "7c66d9120b072f2591739ee88f6269d2f12b3e6e627876fa66c67522e34d5e35",
+        "bytes": 2386,
+        "status": "authored source/scaffold/adapter/fixture; UNRUN"
+      },
+      {
+        "path": "SECURITY.md",
+        "sha256": "6baf6d3c1755360f5d902275c893074fd17af2fc10c140fe932b8a90d77d9942",
+        "bytes": 791,
         "status": "authored source/scaffold/adapter/fixture; UNRUN"
       },
       {
@@ -506,8 +518,8 @@
       },
       {
         "path": "fixtures/installed-consumer.mjs",
-        "sha256": "ef09bea72e63d7586b1bb7fe742d53308285457bfc644a3231a24940025aee3d",
-        "bytes": 6607,
+        "sha256": "d19a0b5fe91c1c3fe9273f22e1191438173064834620475b92df8efe93175424",
+        "bytes": 6602,
         "status": "authored source/scaffold/adapter/fixture; UNRUN"
       },
       {
@@ -524,8 +536,8 @@
       },
       {
         "path": "scripts/check-installed-artifact.mjs",
-        "sha256": "e83e357ca01090acf469656969234ad2fef6355165a8bce138e54bbee1a4f38d",
-        "bytes": 7679,
+        "sha256": "89f7f40d346ece8190cf3ff5f9362cc2767d87d1e934a6588c51ef11462770be",
+        "bytes": 7680,
         "status": "authored source/scaffold/adapter/fixture; UNRUN"
       },
       {

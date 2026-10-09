@@ -86,7 +86,7 @@ run(process.execPath, ["--import", path.join(workspace, "guard.mjs"), "pure.mjs"
 run(process.execPath, ["--import", path.join(workspace, "guard.mjs"), "consumer.mjs"], "public-runtime.log", { ...process.env, OWNER_OUTSIDE_CONTROL: path.join(output, "outside-control.mjs") });
 writeFileSync(path.join(workspace, "public-types.ts"), readFileSync(path.join(repository, "fixtures", "public-types.ts")));
 writeFileSync(path.join(workspace, "host-ports.ts"), readFileSync(path.join(repository, "fixtures", "composition", "host-ports.ts")));
-const config = { compilerOptions: { target: "ES2023", module: "NodeNext", moduleResolution: "NodeNext", lib: ["ES2023", "DOM", "DOM.Iterable"], types: [], strict: true, skipLibCheck: true, noEmit: true }, files: ["public-types.ts", "host-ports.ts"] };
+const config = { compilerOptions: { target: "ES2023", module: "NodeNext", moduleResolution: "NodeNext", lib: ["ES2023", "DOM", "DOM.Iterable"], types: [], strict: true, skipLibCheck: false, noEmit: true }, files: ["public-types.ts", "host-ports.ts"] };
 writeFileSync(path.join(workspace, "tsconfig.json"), JSON.stringify(config, null, 2));
 const trace = run(process.execPath, [path.join(workspace, "node_modules", "typescript", "bin", "tsc"), "-p", "tsconfig.json", "--traceResolution"], "public-types.log");
 const realWorkspace = realpathSync(workspace) + path.sep;

@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
   "owner": "foss-earth/cubemap",
-  "preparedAtUtc": "2026-10-09T19-10-46Z",
+  "preparedAtUtc": "2026-10-09T19-18-31Z",
   "status": "SOURCE-ONLY current bytes; checks/history/installed consumers/artifacts/adoption/admission UNRUN",
   "sourceRevision": "90e23b3ee96f53ec5900afc5991a21fffa58649d",
-  "priorSourceReceipt": "build/source-only/2026-10-09T19-10-46Z/SOURCE_RECEIPT.json.before",
-  "sourceManifestPath": "build/source-only/2026-10-09T19-10-46Z/source-manifest.json",
+  "priorSourceReceipt": "build/source-only/2026-10-09T19-18-31Z/SOURCE_RECEIPT.json.before",
+  "sourceManifestPath": "build/source-only/2026-10-09T19-18-31Z/source-manifest.json",
   "sourceManifestEncoding": "UTF-8 sorted path JSON array, indent2, trailing LF; ignored outputs and receipt excluded",
-  "sourceManifestSha256": "82c76c09d144d4f375037b1c7f235c6aee2593a01c1c0aa50344a7429124aae3",
-  "sourceFileCount": 37,
+  "sourceManifestSha256": "f6040e1e0de3d82aa6be9ddaf3dd9135dcfc054f145a768a8ed0e7a06b3de870",
+  "sourceFileCount": 39,
   "provenancePath": "PROVENANCE.json",
-  "provenanceSha256": "8260e4a3b3d67b72ad88fd1e9c858338c9540a35c7f87f56e0e72b90ce16c072",
+  "provenanceSha256": "139ec55cf7908d65511b494595344c0920d32647ae86e025c1995d88d5886131",
   "publicExports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -67,9 +67,14 @@
       "bytes": 374
     },
     {
+      "path": "CODE_OF_CONDUCT.md",
+      "sha256": "c3a907b9e659a0f5a4c701be1b34a7d416526c3a99f129bf4d3b9db09c7ffa9d",
+      "bytes": 3442
+    },
+    {
       "path": "CONTRIBUTING.md",
-      "sha256": "2809e5e1a88cbe2ad01f4cadb23004f5b10ee62a7866c431f67ace7a2d76ba85",
-      "bytes": 285
+      "sha256": "3d6dda5606c6038f1ac03edcf7c36f80aa757c30cf7eceb6090ec1046dc6d02c",
+      "bytes": 1443
     },
     {
       "path": "LICENSE",
@@ -83,13 +88,18 @@
     },
     {
       "path": "PROVENANCE.json",
-      "sha256": "8260e4a3b3d67b72ad88fd1e9c858338c9540a35c7f87f56e0e72b90ce16c072",
-      "bytes": 23106
+      "sha256": "139ec55cf7908d65511b494595344c0920d32647ae86e025c1995d88d5886131",
+      "bytes": 23564
     },
     {
       "path": "README.md",
-      "sha256": "76a306779f10fbe097009f8a9796e94edb5ef9383a8e819daa21dd2e43ec565e",
-      "bytes": 2234
+      "sha256": "7c66d9120b072f2591739ee88f6269d2f12b3e6e627876fa66c67522e34d5e35",
+      "bytes": 2386
+    },
+    {
+      "path": "SECURITY.md",
+      "sha256": "6baf6d3c1755360f5d902275c893074fd17af2fc10c140fe932b8a90d77d9942",
+      "bytes": 791
     },
     {
       "path": "SOURCE_LINEAGE.json",
@@ -123,8 +133,8 @@
     },
     {
       "path": "fixtures/installed-consumer.mjs",
-      "sha256": "ef09bea72e63d7586b1bb7fe742d53308285457bfc644a3231a24940025aee3d",
-      "bytes": 6607
+      "sha256": "d19a0b5fe91c1c3fe9273f22e1191438173064834620475b92df8efe93175424",
+      "bytes": 6602
     },
     {
       "path": "fixtures/public-types.ts",
@@ -143,8 +153,8 @@
     },
     {
       "path": "scripts/check-installed-artifact.mjs",
-      "sha256": "e83e357ca01090acf469656969234ad2fef6355165a8bce138e54bbee1a4f38d",
-      "bytes": 7679
+      "sha256": "89f7f40d346ece8190cf3ff5f9362cc2767d87d1e934a6588c51ef11462770be",
+      "bytes": 7680
     },
     {
       "path": "src/browser/babylon.ts",

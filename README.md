@@ -37,3 +37,10 @@ pixel ownership across awaited host uploads and stale texture cleanup. See
 [the exact lifetime and legacy compatibility contract](docs/native-input-lifetime.md).
 All new source fixtures and installed-consumer changes remain unrun; no current
 app adoption or backend qualification is claimed.
+
+## Project policies
+
+- [Code of conduct](CODE_OF_CONDUCT.md)
+- [Contributing](CONTRIBUTING.md)
+- [AGPL-3.0 license](LICENSE)
+- [Security](SECURITY.md)

@@ -68,7 +68,7 @@ const nativeCommon = createImageFileService({ broker: nativeBroker, priority: ()
 const nativeRecord = { ...record, encodedBytes: 6 * nativeBytes.length };
 const nativeWork = loadCube(nativeRecord, { broker: nativeBroker, scope: nativeScope, label: "actual common native input fixture", maxTextureSide: 4096,
   obtain: (file, size) => nativeCommon.obtain(file, size, nativeScope), decode: (body, file) => nativeCommon.decode(body, file, nativeScope),
-  UPloadCube_PORT() {
+  uploadCube() {
     nativeScope.dispose();
     assert.equal(nativeClosed, 0); assert.equal(nativeBroker.pools.stats().decoded.reserved, 6 * 4 * 4 * 4);
     nativeBegan(); return nativeCompletion;
