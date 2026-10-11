@@ -1,41 +1,33 @@
 # @foss-earth/cubemap
 
-Private version `0.1.0` source extraction from Earth
-`90e23b3ee96f53ec5900afc5991a21fffa58649d`. This tree has no accepted archive,
-validation result, clean candidate commit or consumer-adoption evidence yet.
+Cube-map image representations for FOSS Earth: six-face records, face geometry, GPU layer conventions, target-face preparation and shader sampling fragments.
 
-This owner retains six-face records, face geometry, GPU layer conventions,
-target-face preparation and shader sampling fragments. Its browser loader accepts
-the host's shared image broker, operation scope, acquisition/decode service,
-uploader and renderer readiness. Preview-sheets may supply a face source with the
-six original files as fallback. The package creates no device, scene, scheduler,
-cache, viewer or geographic engine.
+The package creates no device, scene, scheduler, cache, viewer or geographic engine. Its browser loader works through services the host supplies: the shared image broker, an operation scope, an acquisition/decode service, an uploader and renderer readiness. A preview sheet may supply a face source, with the six original files as fallback.
 
-Exports are `.`, `./core`, `./preparation`, `./browser`, `./babylon`, `./shaders`,
-`./schema.json` and `./package.json`. [Public contracts](docs/public-contracts.md)
-describe units, face order and lifecycle; [validation preparation](docs/validation.md)
-describes the retained tests and isolated installed-archive harness.
+## Entries
 
-`@foss-earth/images@0.1.0` is the exact staging dependency. The optional renderer
-adapter consumes `@foss-earth/renderer@0.1.0`; it does not own a backend. These
-versions are not admitted artifact or publication pins. The primary integration
-agent still owns lockfile generation, clean human lineage, the common pinned
-`foss-earth/ci` attribution caller and conformance, checks, archive digests,
-publication and actual application adoption.
+| Export | Contents |
+| --- | --- |
+| `@foss-earth/cubemap` and `/core` | Representation records, validation, face geometry, lookups, size estimates. Pure; no browser or renderer code. |
+| `/preparation` | Target-face preparation. |
+| `/browser` | Browser loader over host-supplied broker, scope, decoder, uploader and readiness. |
+| `/babylon` | Optional adapter for [`@foss-earth/renderer`](https://github.com/foss-earth/renderer). It does not own a backend. |
+| `/shaders` | Shader sampling fragments. |
+| `/schema.json` | JSON schema for the representation record. |
 
-Rollback remains available through the unchanged immutable Earth source. This
-source-only work removed no current-app implementation and changed no application
-imports. Loader callers must provide a dedicated operation scope and explicitly
-acknowledge a completed visibility swap with `settleReplacement()`.
+[Public contracts](docs/public-contracts.md) describe units, face order and lifecycle.
 
+## Using it
 
-## Native input lifetime source increment
+- A `CubeRepresentationRecord` has `projection: "cube"`, a positive integer `faceSize` in texels, six face URLs, a MIME type, the total `encodedBytes`, a role/id and namespaced extensions. `validateCubeRepresentation` resolves face URLs against the final manifest URL.
+- Faces are in the order `px,nx,py,ny,pz,nz` (`CUBE_FACE_NAMES`). At zero pose X is east, Y is north and Z is up.
+- `estimateCube(record, { maxTextureSide })` returns byte costs for the encoded files, the six decoded RGBA faces, the full mip chain and upload staging. `maxTextureSide` is the device limit in texels. The host's shared image pools decide admission.
+- Loader callers must provide a dedicated operation scope and must call `settleReplacement()` once a visibility swap has completed.
+- Decoded inputs and sheet-crop face sources keep their pixels alive across awaited host uploads and stale texture cleanup. See [native input lifetime](docs/native-input-lifetime.md).
 
-The actual common decoded inputs and sheet-crop face sources now provide retained
-pixel ownership across awaited host uploads and stale texture cleanup. See
-[the exact lifetime and legacy compatibility contract](docs/native-input-lifetime.md).
-All new source fixtures and installed-consumer changes remain unrun; no current
-app adoption or backend qualification is claimed.
+## Development
+
+`@foss-earth/cubemap` depends on `@foss-earth/images` and, optionally, `@foss-earth/renderer`, and names them by versions that are not published. Its own `npm install`, tests and build therefore do not work on their own yet. Develop it through the app, which uses libraries straight from their checkouts: see [local source](https://github.com/foss-earth/app#local-source).
 
 ## Project policies
 
