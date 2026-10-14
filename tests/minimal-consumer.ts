@@ -1,6 +1,6 @@
 import type { RepresentationHooks } from "@foss-earth/images";
-import { cubeRepresentation } from "@foss-earth/cubemap";
-import type { CubeFaceSource, CubeUploadPorts } from "@foss-earth/cubemap/browser";
+import { cubeRepresentation } from "@foss-earth/sphere-cubemap";
+import type { CubeFaceSource, CubeUploadPorts } from "@foss-earth/sphere-cubemap/browser";
 import type { WholeImageTexture } from "@foss-earth/images/browser";
 const hooks: RepresentationHooks = cubeRepresentation;
 console.log(hooks.projection);

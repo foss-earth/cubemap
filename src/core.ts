@@ -58,7 +58,7 @@ export function gpuCubeLookup(sample: Vec3): { layer: number; u: number; v: numb
  * The format's faces are WebGPU's with Y and Z exchanged: sampling the GPU cube
  * with (x, z, y) of an image-local direction lands on the same texel of the
  * same source face. Each face therefore uploads unrotated into the layer below,
- * and the shaders swap the two components. panoramaMath.test.ts proves it.
+ * and the shaders swap the two components. sphereMath.test.ts proves it.
  */
 export const GPU_LAYER_SOURCE_FACES: readonly CubeFaceName[] = ["px", "nx", "pz", "nz", "py", "ny"];
 

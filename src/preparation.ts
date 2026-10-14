@@ -2,7 +2,7 @@ import type { LinearImage, ImageSamplingPlan, SourceSampler } from "@foss-earth/
 import { SOURCE_CUBE_FACES, type CubeFaceName } from "./core.js";
 
 /**
- * Set by `@foss-earth/equirectangular`'s `cubePreparationPlan` on the sampler it
+ * Set by `@foss-earth/sphere-equirectangular`'s `cubePreparationPlan` on the sampler it
  * builds, and on no other. The value is the pyramid level that sampler reads.
  * Cubemap does not depend on equirectangular: a sampler without this mark is
  * read one direction at a time, as before.

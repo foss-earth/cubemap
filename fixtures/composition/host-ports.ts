@@ -2,8 +2,8 @@
 import type { ImageSessionBroker, ImageOperationScope } from "@foss-earth/images";
 import type { ImageFileService } from "@foss-earth/images/browser";
 import type { ImageTextureUploader, UploadedImageTexture } from "@foss-earth/renderer/babylon";
-import { createCubeUploadAdapter } from "@foss-earth/cubemap/babylon";
-import type { CubeLoadPorts } from "@foss-earth/cubemap/browser";
+import { createCubeUploadAdapter } from "@foss-earth/sphere-cubemap/babylon";
+import type { CubeLoadPorts } from "@foss-earth/sphere-cubemap/browser";
 export function cubeHostPorts(host: {
   broker: ImageSessionBroker; scope: ImageOperationScope; files: ImageFileService;
   uploader: ImageTextureUploader; maxTextureSide: number; label: string; overlap: boolean; priority: number;

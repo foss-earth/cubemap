@@ -1,4 +1,4 @@
-# @foss-earth/cubemap
+# @foss-earth/sphere-cubemap
 
 Cube-map image representations for FOSS Earth: six-face records, face geometry, GPU layer conventions, target-face preparation and shader sampling fragments.
 
@@ -8,7 +8,7 @@ The package creates no device, scene, scheduler, cache, viewer or geographic eng
 
 | Export | Contents |
 | --- | --- |
-| `@foss-earth/cubemap` and `/core` | Representation records, validation, face geometry, lookups, size estimates. Pure; no browser or renderer code. |
+| `@foss-earth/sphere-cubemap` and `/core` | Representation records, validation, face geometry, lookups, size estimates. Pure; no browser or renderer code. |
 | `/preparation` | Target-face preparation. |
 | `/browser` | Browser loader over host-supplied broker, scope, decoder, uploader and readiness. |
 | `/babylon` | Optional adapter for [`@foss-earth/renderer`](https://github.com/foss-earth/renderer). It does not own a backend. |
@@ -25,9 +25,16 @@ The package creates no device, scene, scheduler, cache, viewer or geographic eng
 - Loader callers must provide a dedicated operation scope and must call `settleReplacement()` once a visibility swap has completed.
 - Decoded inputs and sheet-crop face sources keep their pixels alive across awaited host uploads and stale texture cleanup. See [native input lifetime](docs/native-input-lifetime.md).
 
+## Earlier package name
+
+This package was named `@foss-earth/cubemap`. Nothing is published under that name
+any more: consumers import `@foss-earth/sphere-cubemap`. Records and documents did
+not change: the `cube` projection, the schema `$id` and media URLs are as before. The
+repository keeps the name `cubemap` until it is renamed on the host.
+
 ## Development
 
-`@foss-earth/cubemap` depends on `@foss-earth/images` and, optionally, `@foss-earth/renderer`, and names them by versions that are not published. Its own `npm install`, tests and build therefore do not work on their own yet. Develop it through the app, which uses libraries straight from their checkouts: see [local source](https://github.com/foss-earth/app#local-source).
+`@foss-earth/sphere-cubemap` depends on `@foss-earth/images` and, optionally, `@foss-earth/renderer`, and names them by versions that are not published. Its own `npm install`, tests and build therefore do not work on their own yet. Develop it through the app, which uses libraries straight from their checkouts: see [local source](https://github.com/foss-earth/app#local-source).
 
 ## Project policies
 

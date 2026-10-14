@@ -1,5 +1,5 @@
 {
-  "name": "@foss-earth/cubemap",
+  "name": "@foss-earth/sphere-cubemap",
   "version": "0.1.0",
   "private": true,
   "type": "module",

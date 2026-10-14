@@ -26,7 +26,7 @@ const workspace = path.join(output, "workspace");
 assert.equal(existsSync(workspace), false, "Refusing to overwrite an existing consumer workspace.");
 mkdirSync(workspace, { recursive: true });
 const artifacts = [["owner", metadata.name, "0.1.0"], ["images", "@foss-earth/images", "0.1.0"], ["renderer", "@foss-earth/renderer", "0.1.0"], ["ui", "@foss-earth/ui", "0.1.0"], ["babylon", "@babylonjs/core", "8.56.2"], ["typescript", "typescript", "5.9.3"], ["jpeg", "jpeg-js", "0.4.4"]];
-if (owner === "equirectangular") artifacts.push(["cubemap", "@foss-earth/cubemap", "0.1.0"]);
+if (owner === "sphere-equirectangular") artifacts.push(["cubemap", "@foss-earth/sphere-cubemap", "0.1.0"]);
 const dependencies = {}, pins = {};
 for (const [argument, name, version] of artifacts) {
   assert.ok(args[argument], `Missing --${argument}=archive.tgz`);
